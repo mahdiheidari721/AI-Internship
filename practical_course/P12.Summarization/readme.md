@@ -23,13 +23,25 @@
 به صورت کلی دو روش برای خلاصه‌سازی یک متن وجود دارد:
 
 1. خلاصه‌سازی استخراجی (Extractive summarization)
-2. خلاصه‌سازی چکیده‌ای (Abstractive summariz)
+2. خلاصه‌سازی چکیده‌ای (Abstractive summarization)
 
 
 
 در خلاصه‌سازی استخراجی متن جدیدی تولید نمی‌شود. بلکه مهمترین جملات از متن اصلی برداشته می‌شود و در متن خلاصه شده کپی می‌شود. در این روش نیاز است تا جملات یک متن رتبه‌بندی شوند و سپس براساس این رتبه‌بندی، مهمترین موارد انتخاب شوند. این روش بسیار ساده است و در کارهای گذشته بیشتر از این روش استفاده می‌شده است. نمونه‌ای از این روش را در موتورهای جستجو مشاهده می‌کنید.
 
-![](C:\Users\Sadeghi\Desktop\AI-Internship\Practical_NLP_course\P12.Paraphrasing\se.png)
+![](./se.png)
+
+
+
+یکی از الگوریتم‌هایی که برای خلاصه‌سازی استخراجی مورد استفاده قرار می‌گیرد، الگوریتم TextRank است. این الگوریتم را از [این جا](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c#:~:text=TextRank%20(The%20magic%20behind%20text%20summarization)) مطالعه کنید.
+
+
+
+> تمرین1: ابتدا مجموعه داده CNN/Daily Mail را از [این لینک](https://github.com/abisee/cnn-dailymail) دانلود کنید. سپس الگوریتم TextRank  را روی آن اجرا کنید. نتایج خود را با معیار ROUGE ارزیابی کنید.
+>
+> توجه: برای آشنایی با معیار ROUGE به [این مقاله](https://cai.type.sk/content/2009/2/evaluation-measures-for-text-summarization/1726.pdf) رجوع کنید.
+
+
 
 
 
@@ -43,4 +55,4 @@
 
 
 
-> تمرین1: ابتدا مجموعه داده CNN/Daily Mail را از [این لینک](https://github.com/abisee/cnn-dailymail) دانلود کنید. سپس با استفاده شبکه‌های عصبی ترنسفورمر مدلی طراحی کنید که اخبار را از شما بگیرد و یک متن خلاصه برای هر خبر تولید کند.
+> تمرین2: ابتدا مجموعه داده CNN/Daily Mail را از [این لینک](https://github.com/abisee/cnn-dailymail) دانلود کنید. سپس با استفاده شبکه‌های عصبی ترنسفورمر مدلی طراحی کنید که اخبار را از شما بگیرد و یک متن خلاصه برای هر خبر تولید کند. مدل خود را با معیار ROUGE ارزیابی کنید.
